@@ -11,6 +11,8 @@ def main():
     clock = pygame.time.Clock()
     dt = 0
     player = Player(x = SCREEN_WIDTH/2, y = SCREEN_HEIGHT/2)
+    updateable = pygame.sprite.Group()
+    drawable = pygame.sprite.Group
 
     while True:
         for event in pygame.event.get():
